@@ -34,6 +34,7 @@ $json = json_decode($data,true);
             <?php echo  "";?>
         </span>
         <div>
+            <h3>Train name :</h3> <?php echo $json['train']['name']?>
             <b>From :</b> <?php echo $json['route'][0]['station']['name']; ?>
             <b>To :</b> <?php echo $json['route'][count($json['route'])-1]['station']['name']; ?>
         </div>
